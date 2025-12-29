@@ -30,10 +30,10 @@ for i in final_X:
 user_X = scaler.transform([all_value])
 
 @st.cache_data
-def ml_model(X,y):
- model = RandomForestRegressor()
- model.fit(scaled_X,y)
- return model
+def ml_model(X,y)
+  model = RandomForestRegressor()
+  model.fit(scaled_X,y)
+  return model
 
 model ml_model(scaled_X,y)
 house_price = model.predict(user_X)[0]
@@ -47,6 +47,7 @@ with st.spinner('Predicting House Price'):
 st.success(f'Estimated House Price is: $ {final_price}')
 st.markdown('''**Design and Developed by: Tanya Pal**''')
  
+
 
 
 
